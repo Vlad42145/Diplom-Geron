@@ -1,0 +1,634 @@
+@import 'template';
+
+#app {
+  width: 100%;
+}
+
+body {
+  flex-direction: column;
+  background-color: $light;
+}
+
+p,h1,h2,h3,h4,h5{
+  color: $dark;
+}
+
+.wrapper{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+header{
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    margin-bottom: 50px;
+    button{
+      background-color: transparent;
+      border: none;
+      padding: 13px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: 0.3s;
+      h3{
+        color: $stroke-dark;
+      }
+      &:hover{
+        border-bottom: 2px solid $main;
+        h3{
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+
+.main{
+  .containerTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $main;
+    padding: 25px 0 50px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    .circle{
+      width: 80px;
+      height: 80px;
+      border-radius: 100px;
+      background-color: $light;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    h1{
+      color: $light;
+    }
+  }
+  .columnInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .containerInfo{
+      width: 100%;
+      padding: 20px 0 20px;
+      text-align: center;
+      border: 1px solid $stroke-light;
+      border-radius: 10px;
+      color: $stroke-dark;
+      transition: 0.3s;
+      &:hover{
+        background-color: $inverce;
+        border: 1px solid $inverce;
+        h3{
+          color: $light;
+        }
+      }
+    }
+  }
+  .process{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: $dark;
+
+  }
+  .containerCardsInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .cardInfo{
+      width: 281px;
+      height: 142px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+      background-color: $dark;
+      color: $light;
+      border-radius: 10px;
+      padding: 10px 15px;
+      p{
+        width: 254px;
+        color: $light;
+      }
+      h4{
+        color: $light;
+  
+      }
+      .circle{
+        width: 40px;
+        height: 40px;
+        background-color: $light;
+        color: $dark;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h4{
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+
+
+
+.about{
+  h1{
+    color: $dark;
+  }
+  h2{
+    color: $dark;
+  }
+  .BodyM{
+    color: $dark;
+  }
+  .title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .containerCardsAbout{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .cardAbout{
+      text-align: center;
+      border: 1px solid $stroke-light;
+      width: 262px;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      transition: 0.3s;
+      h1{
+        transition: 0.3s;
+      }
+      .BodyM{
+        transition: 0.3s;
+      }
+      svg{
+        transition: 0.3s;
+        path{
+          transition: 0.3s;
+        }
+        circle{
+          transition: 0.3s;
+        }
+        rect{
+          transition: 0.3s;
+        }
+      }
+      &:hover{
+        border: 1px solid $main;
+        h1{
+          color: $main;
+        }
+        .BodyM{
+          color: $main;
+        }
+        .project{
+          path{
+            fill: $main;
+          }
+        }
+        .client{
+          circle{
+            stroke: $main;
+            &.eye{
+              fill: $main;
+            }
+          }
+          path{
+            stroke: $main;
+          }
+        }
+        .experience{
+          .stroke{
+            stroke: $main;
+          }
+          .fill{
+            fill: $main;
+          }
+        }
+        .support{
+          path{
+            stroke: $main;
+          }          
+          rect{
+            fill: $main;
+            stroke: $main;
+          }
+
+        }
+      }
+    }
+  }
+  .way{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .containerCardsStory{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .cardStory{
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      color: $dark;
+      .storyItem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        p{
+          width: 535px;
+        }
+        .badge{
+          background-color: $dark;
+          padding: 5px 30px;
+          border-radius: 10px;
+          color: $light;
+          h2{
+            color: $light;
+          }
+        }
+        &.green{
+          .badge{
+            background-color: $main;
+            h2{
+              color: $light;
+            }
+          }
+          h2{
+            color: $main;
+          }
+          p{
+            color: $main;
+          }
+        }
+      }
+    }
+  }
+}
+
+.title{
+  color: $light;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  &.about{
+    background-color: $main;
+    h1{
+      color: $light;
+    }
+  }
+  &.rates{
+    background-color: $inverce;
+    margin-bottom: 50px;
+    h1{
+      color: $light;
+    }
+  }
+  &.contact{
+    background-color: $dark;
+    margin-bottom: 50px;
+    h1{
+      color: $light;
+    }
+  }
+}
+
+.rates{
+  .containerRates{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .cardRate{
+      width: 212px;
+      text-align: center;
+      &.first{
+        text-align: start;
+        padding-top: 19px;
+        .rateTitle{
+          opacity: 0;
+          display: none;
+        }
+        .btn.orange{
+          display: none;
+        }
+      }
+      .rateTitle{
+        background-color: $main;
+        border-radius: 10px 10px 0 0;
+        padding: 10px 0 10px 0;
+        color: $light;
+      }
+      .rateProperties{
+        margin-bottom: 30px;
+        .sounds{
+          padding: 10px;
+          border-bottom: 1px solid $stroke-light;
+          .BodyM{
+            margin: 0;
+          }
+        }
+      }
+      .btn.orange{
+        padding: 10px 20px 10px 20px;
+        background-color: $button;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+          background-color: $inverce;
+          h4{
+            color: $light;
+          }
+        }
+      }
+    }
+  }
+  .customRate{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    background-color: $main;
+    padding: 30px 40px 30px 40px;
+    margin-bottom: 40px;
+    h1{
+      color: $light;
+    }
+    .containerInputs{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .blockInput{
+        width: 300px;
+        .BodyM{
+          color: $light;
+          margin-bottom: 10px;
+        }
+        input{
+          width: 100%;
+          padding: 10px;
+          background-color: transparent;
+          border: 1px solid transparent;
+          border-bottom: 1px solid $light;
+          text-align: center;
+          font-weight: 500;
+          font-size: 20px;
+          outline: none;
+          transition: 0.3s;
+          color: $light;
+          &::placeholder{
+            color: $light;
+          }
+          &:focus{
+            border: 1px solid $light;;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+    .btn.transperent{
+      background-color: transparent;
+      padding: 15px 0;
+      width: 30%;
+      border: 1px solid $light;
+      border-radius: 5px;
+      transition: 0.3s;
+      cursor: pointer;
+      h3{
+        color: $light;
+      }
+      &:hover{
+        background-color: $light;
+        h3{
+          color: $dark;
+        }
+      }
+    }
+  }
+  .BodyM{
+    margin-bottom: 50px;
+  }
+}
+
+.contact{
+  .BodyM{
+    margin-bottom: 50px;
+  }
+  .form{
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid $dark;
+    border-radius: 20px;
+    margin-bottom: 70px;
+    .BodyM{
+      margin-bottom: 0;
+    }
+    .formContent{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      deepl-inline-translate{
+        display: none;
+      }
+      .containerTabPiker{
+        display: flex;
+        width: 100%;
+        .tabPiker{
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid $stroke-light;
+          width: 50%;
+          padding: 10px;
+          cursor: pointer;
+          .BodyM{
+            color: $stroke-light;
+          }
+          &.active{
+            border-bottom: 1px solid $active;
+            .BodyM{
+              color: $active;
+            }
+          }
+        }
+      }
+      .continerInput{
+        display: flex;
+        width: 100%;
+        .blockSvg{
+          background-color: $dark;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px 0 0 10px;
+          svg{
+            display: none;
+            &.actives{
+              display: block;
+            }
+          }
+        }
+        input{
+          width: 100%;
+          padding: 10px;
+          border-radius: 0 10px 10px 0;
+          border: 1px solid $dark;
+          outline: none;
+          background-color: transparent;
+          font-weight: 500;
+          font-size: 20px;
+          color: $dark;
+
+          &::placeholder{
+            font-weight: 500;
+            font-size: 20px;
+            color: $dark;
+          }
+        }
+      }
+      .area{
+        resize: none;
+        width: 360px;
+        height: 80px;
+        border: 1px solid $dark;
+        outline: none;
+        padding: 20px;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        color: $dark;
+        &::placeholder{
+          font-weight: 500;
+          font-size: 20px;
+          color: $stroke-dark;
+        }
+      }
+      .btn.orange{
+        width: 100%;
+        padding: 15px 0;
+        border: none;
+        background-color: $button;
+        border-radius: 5px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+          background-color: $inverce;
+          h3{
+            color: $light;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.products{
+  .titleProduct{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .containerProducts{
+    display: flex;
+    &:last-child{
+      margin-bottom: 60px;
+    }
+    .product{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      gap: 30px;
+      padding: 30px 20px;
+      color: $light;
+      width: 33%;
+      h3{
+        color: $light;
+      }
+      h1{
+        color: $light;
+      }
+      &.green{
+        background-color: $main;
+      }
+      &.dark{
+        background-color: $dark;
+      }
+      &.purple{
+        background-color: $inverce;
+      }
+      .btn.transperent{
+        width: 100%;
+        padding: 15px 0;
+        background-color: transparent;
+        border: 1px solid $light;
+        border-radius: 5px;
+        color: $light;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+          background-color: $light;
+          h3{
+            color: $dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+  background-color: $button;
+  padding: 30px 0;
+  .containerFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navLinksFooter{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .BodyM{
+        text-decoration: none;
+        color: $dark;
+      }
+    }
+    .cirle{
+      width: 80px;
+      height: 80px;
+      border-radius: 100px;
+      background-color: $dark;
+      color: $light;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h4{
+        color: $light;
+      }
+    }
+  }
+}
+
+
